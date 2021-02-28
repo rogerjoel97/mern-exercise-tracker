@@ -1,5 +1,5 @@
 import React from 'react';
-import "bootstrap/dist/css/bootstrap.main.css";
+//import "bootstrap/dist/css/bootstrap.main.css";
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import Navbar from "./components/navbar.component";
@@ -10,7 +10,7 @@ import CreateUser from "./components/create-user.component";
 
 function App() {
   return (
-    <Route>
+    <Router>
       <div className="container">
         <Navbar />
         <br/>
@@ -19,7 +19,7 @@ function App() {
         <Route path = "/create"  component = {CreateExercises} />
         <Route path = "/user"  component = {CreateUser} />
       </div>
-    </Route>
+    </Router>
   );
 }
 
